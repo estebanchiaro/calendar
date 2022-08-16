@@ -12,6 +12,30 @@ let weather= {
         const{icon, description}= data.weather[0];
         const{temp, humidity}= data.main;
         const{speed}=data.wind;
+        const{sunrise}=data.sys;
+        const{sunset}=data.sys;
+
+        let unix_timestampSunrise = sunrise
+
+var date = new Date(unix_timestampSunrise * 1000);
+var hours = date.getHours();
+var minutes = "0" + date.getMinutes();
+var seconds = "0" + date.getSeconds();
+var formattedTimeSunrise = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+
+
+let unix_timestampSunset = sunset
+
+var date = new Date(unix_timestampSunset * 1000);
+var hours = date.getHours();
+var minutes = "0" + date.getMinutes();
+var seconds = "0" + date.getSeconds();
+var formattedTimeSunset = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
+
+
+
+
 
         document.querySelector(".city").innerText= "Weather in "+ name;
         document.querySelector(".icon").src= "https://openweathermap.org/img/wn/"+icon+
@@ -20,6 +44,10 @@ let weather= {
          document.querySelector(".temp").innerText= temp+"°F";
          document.querySelector(".humidity").innerText="Humidity: "+ humidity+"%";
          document.querySelector(".wind").innerText="Wind Speed: "+speed+" mph";
+        document.querySelector(".sunrise").innerText="Sunrise at: "+ formattedTimeSunrise+" 🌝"
+        document.querySelector(".sunset").innerText="Sunset at: "+formattedTimeSunset+" 🌚"
+
+
 
          document.querySelector(".weather").classList.remove("loading")
          document.body.style.backgroundImage="url('https://source.unsplash.com/1600x900/?"
