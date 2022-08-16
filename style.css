@@ -11,14 +11,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     height: 100vh;
     margin: 0;
-    background: rgb(96, 105, 124);
     background-image: url("imgs/city.jpg");
     font-family: 'Open Sans', sans-serif;
     font-size: 120%;
     background-repeat: no-repeat;
     background-size:cover;
+    
 
 }
 
@@ -82,7 +83,7 @@ input.search-bar{
 
 .box{
     margin-top:10px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 button:hover{

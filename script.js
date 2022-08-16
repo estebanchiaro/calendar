@@ -52,15 +52,18 @@ var formattedTimeSunset = hours + ':' + minutes.substr(-2) + ':' + seconds.subst
          document.querySelector(".weather").classList.remove("loading")
          document.body.style.backgroundImage="url('https://source.unsplash.com/1600x900/?"
          +name+"')";
-        if(name=="Mt. Dora"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
-        else if(name=="Jacksonville"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
+        if(name=="Mt. Dora"){document.body.style.backgroundImage="url('imgs/mt.dora.jpg')"}
+        else if(name=="Jacksonville"){document.body.style.backgroundImage="url('imgs/jacksonville.jpg')"}
         else if(name=="Orlando"){document.body.style.backgroundImage="url('imgs/orlando.jpg')"}
-        else if(name=="Houston"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
-        else if(name=="New York"){document.body.style.backgroundImage="url('imgs/ny.jpg')"}
-        else if(name=="Las Vegas"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
+        else if(name=="Houston"){document.body.style.backgroundImage="url('imgs/houston.jpg')"}
+        else if(name=="New York"){document.body.style.backgroundImage="url('imgs/ny1.jpg')"}
+        else if(name=="Las Vegas"){document.body.style.backgroundImage="url('imgs/lasvegas.jpg')"}
         else if(name=="Roswell"){document.body.style.backgroundImage="url('imgs/roswell.jpg')"}
-        else if(name=="Tavares"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
-        else if(name=="Miami"){document.body.style.backgroundImage="url('imgs/random.jpg')"}
+        else if(name=="Eustis"){document.body.style.backgroundImage="url('imgs/eustis.jpg')"}
+        else if(name=="Miami"){document.body.style.backgroundImage="url('imgs/miami.jpg')"}
+        else if(name=="Lafayette"){document.body.style.backgroundImage="url('imgs/lafayette.jpg')"}
+        else if(name=="Ruidoso"){document.body.style.backgroundImage="url('imgs/ruidoso.jpg')"}
+
 
     },
     search:function(){
